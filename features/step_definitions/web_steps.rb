@@ -4,9 +4,9 @@ Given /^I am on (the homepage)$/ do |page_name|
   visit path_to(page_name)
 end
 
-When "I add a new project" do
+When /^I add a new project called "(.*?)"$/ do |arg1|
   click_link "New Project"
-  fill_in "Name", :with => "TextMate 2"
+  fill_in "Name", :with => arg1
   click_button "Create Project"
 end
 

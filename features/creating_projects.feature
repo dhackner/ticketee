@@ -5,5 +5,5 @@ Feature: Creating projects
   
   Scenario: Creating a project
     Given I am on the homepage
-    When I add a new project
+    When I add a new project called "TextMate 2"
     Then I should see "Project has been created."
