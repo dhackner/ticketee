@@ -7,5 +7,9 @@ end
 When "I add a new project" do
   click_link "New Project"
   fill_in "Name", :with => "TextMate 2"
-  clicks_button "Create Project"
+  click_button "Create Project"
+end
+
+Then /^I should see "(.*?)"$/ do |arg1|
+  has_content? arg1
 end
