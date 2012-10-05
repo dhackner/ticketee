@@ -12,7 +12,8 @@ gem 'sqlite3'
 # in production environments by default.
 group :assets do
   gem 'compass-rails'
-  gem 'sass-rails', "  >= 3.1.0"
+  # Must build from github to get the fix to https://github.com/rails/sass-rails/issues/100
+  gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :tag=>'3-1-stable'
   gem 'coffee-rails', " >= 3.1.0"
   gem 'dynamic_form'
   gem 'uglifier'
