@@ -10,12 +10,8 @@ When /^I add a new project called "(.*?)"$/ do |project_name|
   click_button "Create Project"
 end
 
-Then /^I should see "(.*?)"$/ do |text|
-  assert page.has_content?(text)
-end
-
-Then /^I should not see "(.*?)"$/ do |text|
-  assert page.has_no_content?(text)
+Then /^I should( not)? see "(.*?)"$/ do |negated, text|
+  assert_equal page.has_content?(text), negated.nil?
 end
 
 Then /^I should be on (.+)$/ do |page_name|
