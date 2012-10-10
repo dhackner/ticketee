@@ -2,7 +2,7 @@ Feature: Creating projects
   In order to have projects to assign tickets to
   As a user
   I want to create them easily
-  
+
   Background:
     Given I am on the homepage
 
