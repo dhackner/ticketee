@@ -11,7 +11,7 @@ Feature: Viewing tickets
     And there is a project called "Internet Explorer"
     And that project has a ticket:
       | title                | description   |
-      | Standards compliance |  Isn't a joke |
+      | Standards compliance | Isn't a joke. |
 
     And I am on the homepage
 
