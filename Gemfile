@@ -33,7 +33,8 @@ gem 'jquery-rails'
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
   gem 'autotest'
-  gem 'devise', '~> 1.4.3'
+  gem 'devise'
+  gem 'email_spec'
 end
 
 group :test do
