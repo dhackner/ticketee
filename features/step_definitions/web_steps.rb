@@ -52,3 +52,7 @@ end
 When /^I press "(.*?)"$/ do |button|
   click_button button
 end
+
+When /^I check "(.*?)"$/ do |box|
+  check box
+end
